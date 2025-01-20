@@ -41,3 +41,29 @@
 }
 
 </code></pre>
+
+조건문 활용
+<pre><code>
+@mixin response-breakpoint($breakpoint) {
+	@if $breakpoint == tablet {
+		// true, false
+		@media (1025px > width) {
+			@content;
+		}
+	} @else if $breakpoint == mobile {
+		@media (900px > width) {
+			@content;
+		}
+	}
+}
+
+
+@include response-breakpoint(tablet) {
+	background-color: green;
+}
+@include response-breakpoint(mobile) {
+	background-color: blue;
+	color: #fff;
+}
+
+</code></pre>
