@@ -33,7 +33,7 @@
 }
 
 </code></pre>
-
+***
 불러오기
 <pre><code>
 .btn {
@@ -41,7 +41,7 @@
 }
 
 </code></pre>
-
+***
 조건문 활용
 <pre><code>
 @mixin response-breakpoint($breakpoint) {
