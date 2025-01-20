@@ -22,7 +22,7 @@
 
 ## 변수
 
-@mixins 
+### @mixins 
 예를 들어 같은 스타일의 버튼이 있다고 하면 
 속성을 저장하고 불러오기
 <pre><code>
@@ -33,16 +33,16 @@
 }
 
 </code></pre>
-***
-불러오기
+
+### 불러오기
 <pre><code>
 .btn {
     @include 불러오고싶은스타일변수명
 }
 
 </code></pre>
-***
-조건문 활용
+
+### 조건문 활용
 <pre><code>
 @mixin response-breakpoint($breakpoint) {
 	@if $breakpoint == tablet {
