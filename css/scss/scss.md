@@ -22,7 +22,10 @@
 
 ## 변수
 
-### @mixins 
+$bg-color: red; </br>
+$bg-colors: (red, blue, green);
+
+## @mixins 
 예를 들어 같은 스타일의 버튼이 있다고 하면 
 속성을 저장하고 불러오기
 <pre><code>
@@ -64,6 +67,22 @@
 @include response-breakpoint(mobile) {
 	background-color: blue;
 	color: #fff;
+}
+
+</code></pre>
+
+## 반복문
+
+<pre><code>
+@for $i from 1 through 5 { 
+	// 1 ~ 5까지
+	&-#{$i} { 
+		background-color: nth((), $i);
+	}
+}
+
+@for $i from 1 through length($bg-colors) {
+	//변수의 길이를 가지고 와서 적용가능
 }
 
 </code></pre>
